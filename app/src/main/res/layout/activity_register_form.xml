@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterForm">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        tools:context=".LoginForm">
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:text="Voltar"
+            android:textColor="@color/grey"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.15"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/register_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="144dp"
+            android:text="@string/n_o_possui_conta_cadastre_se_j"
+            android:textColor="@color/pink"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.551"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/containerComponentsRegister"
+            style="@style/ContainerComponents"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/register_title"
+            />
+
+        <EditText
+            android:id="@+id/edit_nome"
+            style="@style/Edit_Text"
+            android:inputType="textPersonName"
+            android:hint="@string/nome"
+            android:autofillHints="name"
+            android:drawableEnd="@drawable/edit_24"
+            app:layout_constraintStart_toStartOf="@id/containerComponentsRegister"
+            app:layout_constraintEnd_toEndOf="@id/containerComponentsRegister"
+            app:layout_constraintTop_toTopOf="@id/containerComponentsRegister"
+            />
+
+        <EditText
+            android:id="@+id/edit_email_register"
+            style="@style/Edit_Text"
+            android:hint="@string/e_mail"
+            android:autofillHints="emailAddress"
+            android:inputType="textEmailAddress"
+            android:drawableEnd="@drawable/ic_email_24"
+            app:layout_constraintStart_toStartOf="@id/containerComponentsRegister"
+            app:layout_constraintEnd_toEndOf="@id/containerComponentsRegister"
+            app:layout_constraintTop_toBottomOf="@id/edit_nome"
+            />
+
+        <EditText
+            android:id="@+id/edit_senha_register"
+            style="@style/Edit_Text"
+            android:hint="@string/senha"
+            android:autofillHints="password"
+            android:inputType="numberPassword"
+            android:drawableEnd="@drawable/ic_baseline_vpn_key_24"
+            app:layout_constraintStart_toStartOf="@id/containerComponentsRegister"
+            app:layout_constraintEnd_toEndOf="@id/containerComponentsRegister"
+            app:layout_constraintTop_toBottomOf="@id/edit_email_register"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/botao_register"
+            style="@style/Button"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/pink"
+            android:text="@string/cadastrar"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/containerComponentsRegister" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintEnd_toStartOf="@+id/back"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

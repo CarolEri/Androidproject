@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ProjetoBuser</string>
+    <string name="buser">buser</string>
+    <string name="senha">Senha</string>
+    <string name="entrar">Entrar</string>
+    <string name="n_o_possui_conta_cadastre_se_j">Não possui conta? Cadastre-se já!</string>
+    <string name="nome">Nome</string>
+    <string name="e_mail">E-mail</string>
+    <string name="cadastrar">CADASTRAR</string>
+    <string name="title_activity_general_screen">GeneralScreen</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>
