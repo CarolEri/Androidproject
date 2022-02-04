@@ -50,7 +50,7 @@
             />
 
         <EditText
-            android:id="@+id/edit_nome"
+            android:id="@+id/insira_nome"
             style="@style/Edit_Text"
             android:inputType="textPersonName"
             android:hint="@string/nome"
@@ -70,7 +70,7 @@
             android:drawableEnd="@drawable/ic_email_24"
             app:layout_constraintStart_toStartOf="@id/containerComponentsRegister"
             app:layout_constraintEnd_toEndOf="@id/containerComponentsRegister"
-            app:layout_constraintTop_toBottomOf="@id/edit_nome"
+            app:layout_constraintTop_toBottomOf="@id/insira_nome"
             />
 
         <EditText
