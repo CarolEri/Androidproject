@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SearchScreen">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FAE0EB"
+        tools:context=".ui.SearchScreen">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="47dp"
+            android:layout_height="40dp"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.043"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.437"
+            app:srcCompat="@drawable/buser_logo" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+            app:layout_constraintEnd_toEndOf="@+id/toolbar"
+            app:layout_constraintTop_toTopOf="@+id/toolbar"
+            app:srcCompat="@drawable/ic_baseline_notifications_24"
+            app:tint="@color/pink" />
+
+        <TextView
+            android:id="@+id/hello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:text="Olá, para onde vamos?"
+            android:textColor="@color/pink"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.273"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+
+        <View
+            android:id="@+id/whiteBox"
+            style="@style/ContainerComponents"
+            android:layout_width="363dp"
+            android:layout_height="457dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/hello" />
+
+        <TextView
+            android:id="@+id/saindoDe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="281dp"
+            android:text="Saindo de: "
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/whiteBox"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/whiteBox"
+            app:layout_constraintTop_toTopOf="@+id/whiteBox" />
+
+        <EditText
+            android:id="@+id/origem"
+            style="@style/Edit_Text"
+            android:layout_marginTop="8dp"
+            android:drawableEnd="@drawable/edit_24"
+            android:hint="Origem"
+            android:inputType="textNoSuggestions"
+            app:layout_constraintEnd_toEndOf="@id/whiteBox"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@id/whiteBox"
+            app:layout_constraintTop_toBottomOf="@id/saindoDe" />
+
+        <TextView
+            android:id="@+id/indoPara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="281dp"
+            android:text="Indo para: "
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/whiteBox"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/whiteBox"
+            app:layout_constraintTop_toBottomOf="@+id/origem" />
+
+        <EditText
+            android:id="@+id/destiny"
+            style="@style/Edit_Text"
+            android:layout_marginTop="8dp"
+            android:drawableEnd="@drawable/edit_24"
+            android:hint="Destino"
+            android:inputType="textNoSuggestions"
+            app:layout_constraintEnd_toEndOf="@id/whiteBox"
+            app:layout_constraintHorizontal_bias="0.678"
+            app:layout_constraintStart_toStartOf="@id/whiteBox"
+            app:layout_constraintTop_toBottomOf="@+id/indoPara" />
+
+        <TextView
+            android:id="@+id/dataIda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Data da ida: "
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/whiteBox"
+            app:layout_constraintHorizontal_bias="0.073"
+            app:layout_constraintStart_toStartOf="@+id/whiteBox"
+            app:layout_constraintTop_toBottomOf="@+id/destiny" />
+
+
+        <EditText
+            android:id="@+id/ida"
+            style="@style/Edit_Text"
+            android:layout_marginTop="8dp"
+            android:drawableEnd="@drawable/ic_baseline_calendar_today_24"
+            android:hint="__/__/____"
+            android:inputType="date"
+            app:layout_constraintEnd_toEndOf="@id/whiteBox"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@id/whiteBox"
+            app:layout_constraintTop_toBottomOf="@+id/dataIda" />
+
+
+        <TextView
+            android:id="@+id/dataVolta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Data da volta: "
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/whiteBox"
+            app:layout_constraintHorizontal_bias="0.08"
+            app:layout_constraintStart_toStartOf="@+id/whiteBox"
+            app:layout_constraintTop_toBottomOf="@+id/ida" />
+
+        <EditText
+            android:id="@+id/volta"
+            style="@style/Edit_Text"
+            android:layout_marginTop="4dp"
+            android:drawableEnd="@drawable/ic_baseline_calendar_today_24"
+            android:hint="__/__/____"
+            android:inputType="date"
+            app:layout_constraintEnd_toEndOf="@id/whiteBox"
+            app:layout_constraintStart_toStartOf="@id/whiteBox"
+            app:layout_constraintTop_toBottomOf="@+id/dataVolta" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/search_buttom"
+            style="@style/Button"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/pink"
+            android:text="BUSCAR"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/whiteBox" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

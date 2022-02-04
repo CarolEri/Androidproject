@@ -10,9 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjetoBuser">
         <activity
-            android:name=".GeneralScreen"
-            android:exported="false"
-            android:label="@string/title_activity_general_screen" />
+            android:name=".ui.SearchScreen"
+            android:exported="false" />
         <activity
             android:name=".RegisterForm"
             android:exported="false" />
